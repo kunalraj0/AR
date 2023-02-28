@@ -6,8 +6,12 @@
 </head>
 
 <body>
-    <a-scene embedded arjs>
-         <a-marker preset="hiro">
+    <a-scene
+    vr-mode-ui="enabled: false;"
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+         <a-marker type="pattern" url=>
             <a-image src="images/asset.png"
               position="0 1 0"
               scale= "1.5 1.5 1.5" 
